@@ -2,7 +2,7 @@ import React, {useCallback, useEffect, useState} from 'react';
 import {ActivityIndicator, Alert, FlatList, KeyboardAvoidingView, Platform, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import {StatusBar} from 'expo-status-bar';
-const DEFAULT_API = 'http://192.168.1.10:3000';
+const DEFAULT_API = 'http://192.168.68.55:3000';
 export default function App(){
  const [base,setBase]=useState(DEFAULT_API),[apiDraft,setApiDraft]=useState(DEFAULT_API);
  const [tasks,setTasks]=useState([]),[loading,setLoading]=useState(false),[editing,setEditing]=useState(null);
